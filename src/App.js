@@ -48,8 +48,8 @@ const possibleAnswers = [
   'Try something new',
   'Hug yourself, a pet, a friend',
   'Blanket time',
-  'Hydration, my friend'
-  'Read/watch/listen- enjoy media!'
+  'Hydration, my friend',
+  'Read, watc or listen to media!'
 ];
 const answer = possibleAnswers[randomIndex];
   return (
