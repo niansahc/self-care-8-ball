@@ -7,6 +7,7 @@ function App() {
 const [userInput, setUserInput] = useState('');
 const [randomIndex, setRandomIndex] = useState('');
 const [error, setError] = useState('');
+//when the state changes, React re-renders components to the browser
 
 const handleChange = (event) => {
   event.preventDefault();
@@ -19,7 +20,8 @@ const handleClick = () => {
   if(userInput)
   {
     setError('')
-  setRandomIndex(Math.round(Math.random() * 20));
+  setRandomIndex(Math.round(Math.random() * 21));
+  //rounds to the nearest integer, returns a random number with max of 21
   setUserInput('');
   }
   else{
@@ -49,7 +51,7 @@ const possibleAnswers = [
   'Hug yourself, a pet, a friend',
   'Blanket time',
   'Hydration, my friend',
-  'Read, watc or listen to media!'
+  'Read, watch or listen to media!'
 ];
 const answer = possibleAnswers[randomIndex];
   return (
