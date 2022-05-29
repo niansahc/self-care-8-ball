@@ -14,6 +14,7 @@ const handleChange = (event) => {
   console.log(event.target.value);
   setUserInput(event.target.value);
 }
+//form input
 
 const handleClick = () => {
 
@@ -60,32 +61,9 @@ const answer = possibleAnswers[randomIndex];
       <p className="info">I'll tell you how you can be kind to yourself!</p>
       <input type="text" className="question" value={userInput} onChange={handleChange} />
       <div className="eight-ball">
-      <div class="cow">
-  <div class="head">
-    <div class="ear left"></div>
-    <div class="ear right"></div>
-    <div class="face"></div>
-    <div class="nose"></div>
-    <div class="grass"></div>
-  </div>
-  <div class="body">
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-    <div class="spot"></div>
-  </div>
-  <div class="leg front left"></div>
-  <div class="leg front right"></div>
-  <div class="leg back left"></div>
-  <div class="leg back right"></div>
-  <div class="tail"></div>
-</div>
+      
+
+ 
         <div className="content" onClick={handleClick}>
         {error ? <p className="error">{error}</p> :
           answer ? <p className="answer">{answer}</p> : <p className="eight">8</p>}
